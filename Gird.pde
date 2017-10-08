@@ -2,7 +2,7 @@ final int TEXT_SIZE = 20;
 final int OFFSET = 100;
 
 void setup() {
-  size(801, 601);
+  size(701, 501);
   textAlign(CENTER, CENTER);
   PFont courier = createFont("Arial", TEXT_SIZE);
   textFont(courier);
@@ -13,11 +13,14 @@ void draw() {
   background(225);
   fill(0);
   grid(50);
+  plotPoint(250, 150);
+  
+  
+  
   //text("y-axis",50,50);
   //text("x-axis",width-0.5*OFFSET,height-0.5*OFFSET);
-  text("x-axis",0.5*OFFSET, height-0.5*OFFSET);
-  text("y-axis",width-0.5*OFFSET,0.5*OFFSET);
-  stroke(0);
+  //text("x-axis",0.5*OFFSET, height-0.5*OFFSET);
+  //text("y-axis",width-0.5*OFFSET,0.5*OFFSET);
   //plotPoint(300,400);
   //plotLine(200,300,600,500);
   //plotTriangle(200,250,350,450,550,150);
@@ -49,9 +52,10 @@ void upsideDownGrid(int n) {
 }
 
 void plotPoint(int x1, int y1) {
+  stroke(0);
   strokeWeight(10);
   point(x1,y1);
-  text((x1-OFFSET)+","+(y1-OFFSET),x1-OFFSET,y1);
+  text((x1-OFFSET)+","+(y1-OFFSET),x1-0.5*OFFSET,y1);
   strokeWeight(1);
 }
 

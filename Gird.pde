@@ -13,8 +13,8 @@ void draw() {
   background(225);
   fill(0);  
   grid(50);
-  
-  //plotPoint(300,400);
+
+  plotPoint(300,100);
   //plotLine(250,200,100,150);
   //plotTriangle(150,100,250,200,100,300);
   //plotQuad(200,250,350,450,550,150,300,100);

@@ -15,6 +15,9 @@ void draw() {
   fill(0);  
   gridLines(10);
   grid(50);
+  
+  plotEllipse(190, 200, 50, 50);
+  plotEllipse(450, 90, 20, 20);
 
   //plotPoint(300,100);
   //plotLine(250,200,100,150);
@@ -110,7 +113,7 @@ void plotEllipse(int x, int y, int w, int h) {
   noFill();
   strokeWeight(2);
   ellipse(x, y, w, h);
-  strokeWeight(10);
+  strokeWeight(5);
   point(x, y);
   strokeWeight(1);
   text((x-OFFSET)+","+(y-OFFSET), x-0.5*OFFSET, y);
